@@ -1,0 +1,87 @@
+.body
+{
+background-image: url("../img/pozadi.jpg");
+}
+h1
+{
+  text-align: center;
+
+
+}
+
+a
+{
+  color: black;
+}
+
+#navbar
+{
+  color:black;
+  margin-right:10%;
+  margin-left:10%;
+
+}
+#card
+{
+  font-family: 'Hind', sans-serif;
+  text-align: left;
+  margin-right:10%;
+  margin-left:10%;
+  padding: 2.5%;
+  border-color: black;
+  border-style: double;
+  border-s:;
+}
+.pridani
+{
+  text-align:center;
+
+
+}
+
+
+#card_2
+{
+  text-align: left;
+  margin-right:10%;
+  margin-left:10%;
+  padding: 2.5%;
+  overflow-x: auto;
+  border-color: black;
+
+
+}
+.form
+{
+  text-align: center;
+}
+
+#records
+{
+  text-align: center;
+  border-color: black;
+}
+#submit
+{
+border-style: dashed;
+color: white;
+
+}
+
+#edit_button
+{
+  margin-right:15%;
+  margin-left:15%;
+  color: black;
+}
+#delete_button
+  {
+    margin-right:15%;
+    margin-left:15%;
+    color:red;
+}
+#back_button
+{
+background-color: red;
+
+}
