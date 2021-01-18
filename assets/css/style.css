@@ -1,6 +1,6 @@
 .body
 {
-background-image: url("../img/pozadi.jpg");
+
 }
 h1
 {
@@ -13,24 +13,28 @@ a
 {
   color: black;
 }
+.button3
+{
+border-radius: 8px;
+height:45px;
 
+}
 #navbar
 {
   color:black;
   margin-right:10%;
   margin-left:10%;
-
+font-family: 'Dosis', sans-serif;
 }
 #card
 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Dosis', sans-serif;
   text-align: left;
   margin-right:10%;
   margin-left:10%;
   padding: 2.5%;
-  border-color: black;
-  border-style: double;
-  border-s:;
+  border-radius: 8px;
+  border-color:darkgrey;
 }
 .pridani
 {
@@ -47,7 +51,9 @@ a
   margin-left:10%;
   padding: 2.5%;
   overflow-x: auto;
-  border-color: black;
+
+  border-radius: 8px;
+  border-color:darkgrey;
 
 
 }
@@ -60,6 +66,8 @@ a
 {
   text-align: center;
   border-color: black;
+
+
 }
 #submit
 {
@@ -70,18 +78,60 @@ color: white;
 
 #edit_button
 {
-  margin-right:15%;
-  margin-left:15%;
-  color: black;
+margin-left: 33%;
+  color: white;
+
 }
 #delete_button
   {
-    margin-right:15%;
-    margin-left:15%;
+
     color:red;
 }
 #back_button
 {
 background-color: red;
+}
+#records_filter
+{
+float: right;
+padding-bottom: 5%;
+border-color: darkgrey
+}
+label {
+    font-family:'Dosis', sans-serif;
+    font-weight: 700;
 
+  
+    color: #000;
+}
+.pagination
+{
+    float:right;
+    padding-top: 2.5%;
+}
+.dataTables_wrapper .row .pagination li a, .dataTables_wrapper .row .pagination li span {
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    background-color: #ffc107;
+    border: solid #ffc107;
+    height: 30px;
+
+    line-height: 28px;
+    color: #fff;
+    padding: 0 8px;
+    margin-left:5px;
+    font-size: 1.2rem;
+}
+#records_info
+{
+  padding-top: 2.5%;
+}
+
+.dataTables_wrapper .row .col-md-6:last-of-type label {
+    text-align: left;
 }

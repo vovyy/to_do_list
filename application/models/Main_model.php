@@ -5,6 +5,9 @@ class Main_model extends CI_Model {
       parent::__construct();
 }
 
+
+
+
 public function insert(){
     $this->load->database();
     $data = array(
@@ -66,6 +69,7 @@ function displayrecordsById($id)
 
  }
 
+
 	function updaterecords($popis,$konec,$splneno,$id)
 	{
     $data = array(
@@ -78,11 +82,14 @@ function displayrecordsById($id)
     return $result;
 	//$query=$this->db->query("UPDATE form SET popis='$popis',konec='$konec', splněno='$splneno', WHERE id='".$id."'");
   //return $query->result();
-	}
+}
+public function insert_checkbox(){
+    $this->load->database();
+    $data = array(
 
 
+        "splněno" => $this->input->post('splněno'),
 
-
-
-
+);
+}
 }

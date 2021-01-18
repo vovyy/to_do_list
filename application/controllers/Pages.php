@@ -19,6 +19,7 @@ class Pages extends CI_Controller {
             $datestring = 'Year: %Y Month: %m Day: %d - %h:%i %a';
             $time = time();
             $data['form'] = $this->Main_model->get_ukoly();
+
             $this->load->view('templates/header',$data);
             $this->load->view('pages/'.$page, $data);
             $this->load->view('templates/footer');
@@ -79,4 +80,12 @@ public function edit($id)
   $this->Main_model->updaterecords($popis,$konec,$splneno,$id);
   redirect(base_url());
 }
+public function pridat_checkbox()
+{
+  $result = $this->Main_model->insert_checkbox();
+  redirect(base_url());
+
+}
+
+
 }
