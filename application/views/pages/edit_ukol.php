@@ -4,7 +4,7 @@
 
     <div id="card"class="card">
 
-        <h1 class="card-title"><u>Editace úkolu</u></h1>
+        <h1 class="card-title display-4"><u>Editace úkolu</u></h1>
 
 
     <br />

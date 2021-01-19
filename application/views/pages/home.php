@@ -4,7 +4,7 @@
 <br>
 <div id="card"class="card">
 
-    <h1 class="jumbotron"><u>Nový úkol</u></h1>
+    <h1 class="card-title display-4"><u>Nový úkol</u></h1>
 
 
 <br />
@@ -84,7 +84,7 @@
                     <td><a href="<?php echo base_url();?>delete/<?= $row->id?>" onclick="return confirm('Opravdu chcete toto pole smazat?')" id="delete_button"><i style="color:red;"class="fas fa-trash-alt"></i></a></td>
 
                     <form  method="post" name="frmcheck">
-                        <td><input type="checkbox" name="splněno" class="box checkbox-done" id="box-1" data-target="<?php echo $row->id; ?>" onclick="chkboxcolorrow(this); " value="splněno" <?php if($row->splněno == "splněno"): ?> checked <?php endif; ?> /></td>
+                        <td><input type="checkbox" name="splněno" class="box checkbox-done checkbox-undone" id="box-1" data-target="<?php echo $row->id; ?>" onclick="return confirm('Opravdu? Tuto akci již nelze vzít zpět')"  value="splněno" <?php if($row->splněno == "splněno"): ?> checked <?php endif; ?> /></td>
 
 
                     </form>

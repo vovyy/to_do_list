@@ -1,12 +1,16 @@
 .body
 {
-
+background-color:#96bb7c;
 }
 h1
 {
   text-align: center;
+color: white;
 
-
+}
+h3
+{
+  color: white;
 }
 
 a
@@ -35,6 +39,8 @@ font-family: 'Dosis', sans-serif;
   padding: 2.5%;
   border-radius: 8px;
   border-color:darkgrey;
+  background-color:#b9b398;
+  color: white;
 }
 .pridani
 {
@@ -54,7 +60,7 @@ font-family: 'Dosis', sans-serif;
 
   border-radius: 8px;
   border-color:darkgrey;
-
+background-color:#b9b398;
 
 }
 .form
@@ -66,6 +72,8 @@ font-family: 'Dosis', sans-serif;
 {
   text-align: center;
   border-color: black;
+  background-color:#fffdf1;
+
 
 
 }
@@ -101,8 +109,8 @@ label {
     font-family:'Dosis', sans-serif;
     font-weight: 700;
 
-  
-    color: #000;
+
+    color: white;
 }
 .pagination
 {
@@ -130,6 +138,7 @@ label {
 #records_info
 {
   padding-top: 2.5%;
+  color:#e3dfc8;
 }
 
 .dataTables_wrapper .row .col-md-6:last-of-type label {

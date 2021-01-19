@@ -25,10 +25,4 @@ else:
   echo "";
 endif;
 
-
-
-
-
-
-
 ?>
