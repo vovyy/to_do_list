@@ -29,16 +29,16 @@
 -->
 <br />
         <label class="form-label"for="exampleFormControlTextarea2"><h3>Datum:</h3> </label>
-        <input type="date" name="konec" class="form-text form-control " placeholder="Sem napište datum ve tvaru: YYYY.MM.DD" id="exampleFormControlTextarea2"  required=""></input>
+        <input type="date"  name="konec" class="form-text form-control " placeholder="Sem napište datum ve tvaru: YYYY.MM.DD" id="exampleFormControlTextarea2"  required=""><?php $today = date("m.d.y"); ?></input>
 
 
   <br />
-
-<button type="submit" id="submit" class="button button3 btn-warning btn-block col-lg-12 col-md-12 col-sm-12" name="submit" value="Submit" required=""><i class="fas fa-plus"></i> Přidat</button>
+<br />
+<button type="submit" id="submit" class="button button3  btn-block col-lg-12 col-md-12 col-sm-12" name="submit" value="Submit" required=""><i class="fas fa-plus"></i> Přidat</button>
 </form>
 </div>
 </div>
-<br />
+
 
 <script>
   function chkboxcolorrow(result)
@@ -49,7 +49,7 @@
         result.parentNode.parentNode.style.color = "Black";
     }
     else {
-      result.parentNode.parentNode.style.backgroundColor = "white";
+      result.parentNode.parentNode.style.backgroundColor = "";
       result.parentNode.parentNode.style.color = "";
     }
   }
@@ -84,7 +84,7 @@
                     <td><a href="<?php echo base_url();?>delete/<?= $row->id?>" onclick="return confirm('Opravdu chcete toto pole smazat?')" id="delete_button"><i style="color:red;"class="fas fa-trash-alt"></i></a></td>
 
                     <form  method="post" name="frmcheck">
-                        <td><input type="checkbox" name="splněno" class="box checkbox-done checkbox-undone" id="box-1" data-target="<?php echo $row->id; ?>" onclick="return confirm('Opravdu? Tuto akci již nelze vzít zpět')"  value="splněno" <?php if($row->splněno == "splněno"): ?> checked <?php endif; ?> /></td>
+                        <td><input type="checkbox" name="splněno" class="box checkbox-done checkbox-undone" id="box-1" data-target="<?php echo $row->id; ?>" onclick="chkboxcolorrow(this); disable" value="splněno" value2="nesplněno" <?php if($row->splněno == "splněno"): ?> checked reloads <?php endif; ?>/></td>
 
 
                     </form>

@@ -15,7 +15,7 @@
       <?php $result = $data[0]; ?>
     <div class="form-group">
         <label class="form-label "for="exampleFormControlTextarea1"><h3>Popis:</h3> </label>
-        <textarea type="text" name="popis" class="form-control " id="exampleFormControlTextarea1" rows="4" cols="32"required=""><?php echo $result->popis; ?></textarea>
+        <textarea type="text" name="popis" class="form-control " id="exampleFormControlTextarea1" rows="4" cols="32"><?php echo $result->popis; ?></textarea>
       </div>
     <br />
 <!--
@@ -36,7 +36,7 @@
     <br />
     <?php $date = date("d.m.Y",strtotime($result->konec)); ?>
           <label class="form-label"for="exampleFormControlTextarea2"><h3>Datum: </h3> </label>
-          <input type="text" name="konec" value="<?php echo $date; ?>" class="form-text form-control " placeholder="Sem napište datum ve tvaru: YYYY.MM.DD" id="exampleFormControlTextarea2" required=""></input>
+          <input type="date" name="konec" value="<?php $result->konec ?>" class="form-text form-control " placeholder="Sem napište datum ve tvaru: YYYY.MM.DD" id="exampleFormControlTextarea2" required=""></input>
 
 
     <br / >
